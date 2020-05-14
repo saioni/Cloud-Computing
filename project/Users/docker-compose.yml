@@ -1,0 +1,12 @@
+version: '2.0'
+
+services:
+
+  users:
+    build: ./users
+    command: sh -c "sleep 40 && python users.py"
+    restart: always
+    container_name: users
+    image: users:latest
+    ports:
+      - "80:5000"

@@ -1,0 +1,12 @@
+version: '2.0'
+
+services:
+
+  users:
+    build: ./rides
+    command: sh -c "sleep 40 && python rides.py"
+    restart: always
+    container_name: rides
+    image: rides:latest
+    ports:
+      - "80:5000"
