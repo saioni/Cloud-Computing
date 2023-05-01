@@ -1,7 +1,7 @@
 ipython
 pika
 SQLAlchemy==1.3.13
-Flask==1.1.1
+Flask==2.3.2
 requests==2.23.0
 urllib3==1.25.8
 Werkzeug==1.0.0
